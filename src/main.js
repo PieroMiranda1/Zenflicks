@@ -26,6 +26,7 @@ import InputIcon from 'primevue/inputicon';
 
 
 const app = createApp(App)
+const port=4000;
 
 app.use(PrimeVue, { ripple: true, theme: { preset: Aura, options: {
             prefix: 'p',
@@ -49,6 +50,6 @@ app.component('pv-card', Card)
     .component('pv-icon-field', IconField)
     .component('pv-input-icon', InputIcon)
 
-
+app.listen(port, () => { console.log("App running on port: " + port) });
 
 app.mount('#app')
