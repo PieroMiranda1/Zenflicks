@@ -50,6 +50,6 @@ app.component('pv-card', Card)
     .component('pv-icon-field', IconField)
     .component('pv-input-icon', InputIcon)
 
-app.listen(port, () => { console.log("App running on port: " + port) });
+//app.listen(port, () => { console.log("App running on port: " + port) });
 
 app.mount('#app')
